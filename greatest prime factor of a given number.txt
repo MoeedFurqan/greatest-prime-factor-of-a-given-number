@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main() {
+	int x,y,z,a,b;
+	printf("enter any number: ");
+	scanf_s("%d", &x); y = x - 1;
+	while (y > 1) {
+		if (y % 2 != 0) {
+			z = y - 1;
+			while (z > 1) {
+					a = y % z;
+					if (a == 0) goto odd;
+					z -= 1;
+			}
+			    if (x%y == 0) {
+					printf("%d is the greatest prime factor of %d.", y, x);
+					return 0;
+				}
+			
+		}
+			odd: y -= 1;
+	}
+		if (x % 2 != 0) {
+			printf("no prime factor");
+			return 0;
+	    }
+	else printf("2 is the greatest prime factor"); 
+	return 0;
+}
